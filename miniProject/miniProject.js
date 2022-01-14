@@ -4,14 +4,14 @@ function numRandom(){
     return num;
 }
 const chooise=numRandom();
-let hit=parseInt(prompt('Enter number bitwin 1-100:'));
+let guess=parseInt(prompt('Enter number bitwin 1-100:'));
 
 let flag=true;
 do{
-    if(hit===chooise){
+    if(guess===chooise){
         flag=false;
-        alert('win win')
+        alert(chooise+' win win')
     }
-    if(hit>chooise) hit=parseInt(prompt('The your number TO BIG Ree enter number bitwin 1-100:'));
-    if(hit<chooise) hit=parseInt(prompt('The your number TO SMAL Ree enter number bitwin 1-100:'));
+    if(guess>chooise) guess=parseInt(prompt('The your number TO BIG Ree enter number bitwin 1-100:'));
+    if(guess<chooise) guess=parseInt(prompt('The your number TO SMAL Ree enter number bitwin 1-100:'));
 }while (flag);
